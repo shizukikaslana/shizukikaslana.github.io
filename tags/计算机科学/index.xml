@@ -8,7 +8,7 @@
 <p>将XiaojiaAddons投入<strong>Recaf</strong>，然后我们看到，XJA并没有使用rename转换器，且混淆极其的简单，甚至只对字符串和数字进行了加密<br>
 很明显，这是<strong>Superblaubeere</strong>写的混淆器例子，在GitHub上开源<br>
 因此我们只需要谷歌搜索<strong>Java Deobfuscator</strong>，随便下载一个，就可以对此黑客端进行完全的反混淆，再用<strong>ForgeFlower</strong>反编译即可<strong>IDEA Ready</strong><br>
-但因为此黑客端混淆实在太弱，如果只需要删除验证和木马，我们没有必要进行反混淆
+但因为此黑客端混淆实在太弱，如果只需要删除验证和木马，我们没有必要进行反混淆<br>
 在<em>com/xiaojia/xiaojiaaddons/XiaojiaAddons</em>类中，我们可以看到preInit方法中存在非常搞笑的<strong>ClientSocket.connect();</strong><br>
 直接删除这行字节码即可破解 &amp; 不受盗号木马影响</p>
         
