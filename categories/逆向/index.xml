@@ -2,14 +2,14 @@
 <![CDATA[<h1>XiaojiaAddons 逆向</h1><p>作者：Ekdysis（）</p>
         
           <blockquote>
-<p>这外挂用户是真弱智，，说这b外挂保护垃圾给我转发了几十个群<br>
-给自己主子丢人现眼呢？</p>
+<p>我说这b外挂保护垃圾被用户转发了几十个群</p>
 </blockquote>
-<p>将XiaojiaAddons投入<strong>Recaf</strong>，然后我们看到，XJA并没有使用rename转换器，且混淆极其的简单，甚至只对字符串和数字进行了加密<br>
-很明显，这是<strong>Superblaubeere</strong>写的混淆器例子，在GitHub上开源<br>
-因此我们只需要谷歌搜索<strong>Java Deobfuscator</strong>，随便下载一个，就可以对此黑客端进行完全的反混淆，再用<strong>ForgeFlower</strong>反编译即可<strong>IDEA Ready</strong><br>
-但因为此黑客端混淆实在太弱，如果只需要删除验证和木马，我们没有必要进行反混淆<br>
-在<em>com/xiaojia/xiaojiaaddons/XiaojiaAddons</em>类中，我们可以看到preInit方法中存在非常搞笑的<strong>ClientSocket.connect();</strong><br>
-直接删除这行字节码即可破解 &amp; 不受盗号木马影响</p>
+<p>Step 1: 将XiaojiaAddons扔进<strong>Recaf</strong></p>
+<blockquote>
+<p>XJA并没有使用rename转换器，且混淆极其简单，甚至只对字符串和数字进行了加密<br>
+然后我们注意到，这是<strong>Superblaubeere</strong>写的混淆器例子，在GitHub上开源<br>
+因此我们只需要谷歌搜索<strong>Java Deobfuscator</strong>，随便下载一个，就可以对此黑客端进行完全的反混淆，再用<strong>ForgeFlower</strong>反编译即可<strong>IDEA Ready</strong>
+但因为此黑客端保护实在太弱，如果只需要删除验证和木马，我们没有必要进行反混淆</p>
+</blockquote>
         
         <hr><p>本文2022-08-23首发于<a href='https://xiyue.life/'>Ekdysis 的博客</a>，最后修改于2022-08-23</p>]]></description><category>逆向</category></item></channel></rss>
